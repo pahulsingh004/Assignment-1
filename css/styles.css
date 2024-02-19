@@ -1,0 +1,113 @@
+
+header, main section {
+    text-align: center;
+}
+
+html{
+
+
+    font: 40px ;
+}
+
+h1, h2{
+    font-variant: small-caps;
+}
+
+figcaption{
+    
+    font-family: small-caps;
+    font-size: 0.8rem; 
+
+}
+
+q{
+    font-style: italic;
+    font-weight: bold;
+    font-family: cursive;
+    font-size: 1.2rem;
+}
+
+footer p{
+    font-size: 0.8rem;
+}
+
+body{
+    width: 90%;
+    max-width: 1200px;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+header, footer {
+    text-align: center;
+}
+
+
+main section {
+    text-align: center;
+    padding: 10px; 
+}
+
+
+blockquote#bio {
+    text-align: left;
+}
+
+
+img.main-section-figure {
+    padding: 10px; 
+}
+
+
+figure.main-section-figure {
+    padding: 10px; 
+    margin: 20px 0; 
+    text-align: center;
+}
+
+
+blockquote#quote q {
+    padding: 10px; 
+}
+
+iframe {
+    padding: 10px;
+}
+
+header, footer{
+    border: 2px solid #2d3da7;
+}
+img.main-section-figure {
+    border-radius: 5px; 
+}
+
+figure#relative-path-image {
+    border: 2px solid rgb(87, 41, 179); 
+    border-radius: 10px; 
+}
+
+figure#absolute-path-image {
+    border: 2px solid rgb(0, 0, 255); 
+    border-radius: 10px; 
+}
+
+iframe, video {
+    border: 2px solid rgb(77, 45, 173); 
+    border-radius: 10px; 
+}
+
+blockquote#quote{
+    padding: 10px;
+}
+
+blockquote#quote q {
+    border: 2px solid #4d43d3; 
+    border-radius: 10px; 
+    box-shadow: 5px 5px 5px #6535d7; 
+}
+
+#grad1 {
+    height: 200px;
+    background-color: rgb(167, 189, 27); /* For browsers that do not support gradients */
+    background-image: linear-gradient(rgb(182, 91, 147), rgb(232, 232, 167));
+  }
