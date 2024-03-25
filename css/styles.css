@@ -1,113 +1,380 @@
 
-header, main section {
-    text-align: center;
+html {
+    font: normal normal 400 20px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-html{
-
-
-    font: 40px ;
-}
-
-h1, h2{
+/*Created a multiple element list selector for h1 and h2 to set font varibles*/
+h1, h2 {
     font-variant: small-caps;
+    text-align: center;
+    color: rgb(92, 210, 120);
+    padding: 0.25rem;
+    margin:0.25rem;
 }
 
-figcaption{
-    
-    font-family: small-caps;
-    font-size: 0.8rem; 
 
-}
 
-q{
+/*Created a ruleset to set the font size of q element*/
+q {
     font-style: italic;
-    font-weight: bold;
     font-family: cursive;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 
-footer p{
-    font-size: 0.8rem;
+/*Created a ruleset using class element sections nested in the main to center and added padding to it.*/
+.main-section{
+    text-align: center; 
+    padding: 2rem;
+    background-color: hsla(0, 0%, 100%, 0.882);
 }
 
 body{
-    width: 90%;
-    max-width: 1200px;
-    padding: 10px;
+    background-color: hsla(0, 0%, 100%, 0.882);
+}
+
+main{
+    background-color: hsla(0, 0%, 100%, 0.882);
+}
+
+aside{
+    background-color: hsla(0, 0%, 100%, 0.882);
+}
+/*Created a ruleset to set the font size of footer p element*/
+footer p {
+    font-size: 0.8em; 
+}
+
+/*Created a ruleset for body element*/
+body {
+    width: 100%; 
+    max-width: 93.75rem; 
     margin: 0 auto;
+    padding: 1rem;
 }
 
-header, footer {
+/*Created a ruleset for image elements elements*/
+image{
+    width: 50%; 
+    height: auto;
+    /*border-radius: 0.5rem;*/
+}
+
+/*Added to the rulest for the figure elemet*/
+figure{
+    padding: 1rem; /* Adds padding to all sides of each figure */
+    margin: 2rem auto; /* Adds margin to the top and bottom, and sets left and right margins to auto for centering */
+}
+
+/*Created a ruleset for main section figure elements*/
+.main-section-figure{
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    margin: 2rem;
+    padding: 1rem; /*added padding to it*/
+    border-radius: 0.5rem; /*It rounds the border*/ 
 }
 
 
-main section {
+/*Adjusted the height and width of the absoulute-path-image*/
+#absolute-path-image img {
+    width: 30%; 
+    height: auto;
+    align-content: center;
+    padding: 1rem;
+    border: 0.2rem solid rgb(4, 47, 86);
+    border-radius: 0.5rem;
+    background-color: hsl(0, 30%, 87%);
+}
+
+/*Adjusted the height and width of the relative-path-image*/
+#relative-path-image img {
+    width: 35%; 
+    height: 50%;
+    align-content: center;
+    padding: 1rem;
+    border: 0.2rem solid rgb(248, 195, 116);
+    border-radius: 0.5rem;
+    background-color: hsla(90, 100%, 71%, 0.916);
+}
+
+/*Created a ruleset to set the font size of figcaption element*/
+figcaption {
+    font-weight: bold;
+    font-variant: small-caps;
     text-align: center;
-    padding: 10px; 
+    font-size: 1.2em;
+}
+#relative-path-image figcaption{
+    color: rgb(240, 171, 66);
 }
 
-
-blockquote#bio {
-    text-align: left;
+#absolute-path-image figcaption{
+    color: rgb(239, 156, 156);
 }
 
-
-img.main-section-figure {
-    padding: 10px; 
+/*Created a ruleset for iframe elements*/
+section iframe{
+    width: 100%;
+    height: 42.75rem;
+    padding: 1rem; /*Adds padding to all sides*/
+    border: 0.2rem solid rgb(152, 142, 190);
+    border-radius: 0.5rem;/*round the corners*/
+    border: 0.2rem solid rgb(185, 244, 57);
 }
 
-
-figure.main-section-figure {
-    padding: 10px; 
-    margin: 20px 0; 
-    text-align: center;
-}
-
-
-blockquote#quote q {
-    padding: 10px; 
-}
-
-iframe {
-    padding: 10px;
-}
-
+/*Aligning the header and footer to be in center using a multiple list element selector*/
 header, footer{
-    border: 2px solid #2d3da7;
-}
-img.main-section-figure {
-    border-radius: 5px; 
-}
-
-figure#relative-path-image {
-    border: 2px solid rgb(87, 41, 179); 
-    border-radius: 10px; 
+    text-align: center;
+    border: 0.125rem solid #df5b5b;
+    background: linear-gradient(to right, rgb(229, 169, 56), rgb(236, 236, 236), rgb(96, 255, 96));
 }
 
-figure#absolute-path-image {
-    border: 2px solid rgb(0, 0, 255); 
-    border-radius: 10px; 
+/*Added a ruleset for biography blockquote to align the text to left*/
+#bio{
+    text-align: left;
+    
 }
 
-iframe, video {
-    border: 2px solid rgb(77, 45, 173); 
-    border-radius: 10px; 
+/*Created a ruleset for the blockquote with the q element to add padding to all sides*/
+#quote{
+    padding: 2rem;
+    box-shadow: 0.625rem 0.625rem 1.25rem rgb(147, 255, 147), -0.625rem 0.625rem 0.938rem rgb(234, 185, 93), -0.625rem -0.625rem 0.938rem rgb(255, 203, 107);    
 }
 
-blockquote#quote{
-    padding: 10px;
+/*Asignment 2*/
+nav{
+    text-align: center;
+    /*color: green;*/
+    padding:0 1rem 2rem;
+    background-color: green;
 }
 
-blockquote#quote q {
-    border: 2px solid #4d43d3; 
-    border-radius: 10px; 
-    box-shadow: 5px 5px 5px #6535d7; 
+nav ul{
+    list-style-type: none;/*Remove the sots from the list*/
+    padding: 0.25rem;
+    margin: 0 0.25rem;
 }
 
-#grad1 {
-    height: 200px;
-    background-color: rgb(167, 189, 27); /* For browsers that do not support gradients */
-    background-image: linear-gradient(rgb(182, 91, 147), rgb(232, 232, 167));
-  }
+/*Align Home Link to Left side*/
+#home-link{
+    float: left;
+    width: 49.5%;
+}
+
+/*Align Contact Link to Right side*/
+#contact-link{
+    float: right;
+    width: 49.5%;  
+}
+
+/*Navigating it to left side of the page*/
+#main-section{
+    float: left;
+    width: 68%;
+}
+
+/*Navigating it to rigth side of the page*/
+#side-section{
+    float: right;
+    width: 25%;
+}
+    
+#clear-element{
+    clear: both;
+    width: 100%;
+}
+
+nav ul li{
+    border: 0.1rem solid #76f93a;
+    background-color: white;
+}
+
+nav a{
+    color: #2cca51;
+    font-variant: small-caps;
+    font-size: 1.25rem;
+    background-color: rgb(251, 246, 241);
+    display: block;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav a:hover{ /*changes color on hovering*/
+    color: rgb(91, 0, 0);
+    background-color: #dcffee;
+    border: 0.1rem solid rgb(0, 0, 0);
+}
+
+/*Navigating it to left side of the page*/
+#biography{
+    float: left;
+    width: 49.5%
+}
+
+/*Navigating it to right side of the page*/
+#image{
+    float: right;
+    width: 49.5%;
+}
+
+/*Changing the font and color of heading 3 and aligning it to center*/
+h3{
+    font-variant: small-caps;
+    color: rgb(1, 255, 60); 
+    text-align: center; /* Center-aligns the text */
+}
+
+aside table {
+    width: 100%; /* Adjust based on your layout */
+    border-collapse: collapse; /* Collapses the border between cells */
+}
+
+aside th, aside td {
+    border: 0.125rem solid #ff0000; /* solid black border */
+    text-align: center; /* Centers text within cells */
+    padding: 0.5rem; /* Adjust padding as needed */
+}
+
+aside th {
+    font-weight: bold; /* Makes table headings bold */
+    font-style: italic; /* italic style for headings */
+    font-variant: small-caps; /* small-caps variant for headings */
+    color: #08ff2d; 
+}
+
+aside td {
+    font-weight: normal; /* Normal font weight for data cells */
+    font-style: normal; /* Normal font style for data cells */
+    color: #000;
+}
+
+aside ul {
+    list-style-type: none; /* Removes bullet points */
+    padding: 0; /* Removes padding, especially on the left side */
+}
+
+aside a {
+    text-decoration: none; /* Removes underline from links */
+    color: #0aebff;
+    line-height: 1.5; /* Increases line height for better readability */
+    display: block; 
+    padding: 5px 0;
+    font-weight: bold;
+}
+
+a:hover{
+    color: rgb(0, 255, 123);
+    text-decoration: underline;
+}
+
+input, textarea, select{
+    display: block;
+}
+
+input[type=checkbox]{
+    width: 1rem;
+    height: 1rem;
+}
+
+form {
+    max-width: 600px; 
+    margin: 1.25rem auto; /* Centers the form and adds margin around it */
+    padding: 1.25rem; /* Padding inside the form */
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 0.5rem; /* Rounded corners */
+}
+
+form label {
+    display: block; /* Each label on a new line */
+    margin-bottom: 0.3rem; /* Space below the label */
+    color:rgb(0, 255, 0);
+    font-variant: small-caps; /* Small-caps font variant */
+    font-weight: bold; /* Bold font weight */
+    text-align: left; /* Align text to the left */
+}   
+
+form input[type="text"], form input[type="email"], form input[type="date"], form input[type=tel], form select, form textarea {
+    width: 100%; 
+    height: 2rem; 
+    margin-bottom: 1rem; 
+    padding: 0 0.625rem;
+    box-sizing: border-box; 
+    border: 0.1rem solid black; 
+    border-radius: 4px; 
+}
+
+form input[type="submit"]{
+    margin-top: 1rem; 
+    padding: 0 0.625rem;
+    border-radius: 4px;
+}
+
+form input[type="submit"]:hover {
+    background-color: #ffffff; 
+}
+
+@media(max-width: 1200px) {
+    html{
+        font-size: 15px;
+    }
+
+    #image{
+        float: right;
+        width: 35%;
+    }
+}
+
+@media(max-width: 900px) {
+    html{
+        font-size: 15px;
+    }
+
+    #biography{
+        float: none;
+        width: 95%
+    }
+    
+    /*Navigating it to right side of the page*/
+    #image{
+        float: none;
+        width: 95%;
+    }
+
+    #home-link{
+        float: none;
+        width: 95%
+    }
+    
+    /*Navigating it to right side of the page*/
+    #contact-link{
+        float: none;
+        width: 95%;
+    }
+
+    main{
+        float:none;
+        width:95%;
+    }
+
+    aside{
+        float:none;
+        width:95%
+    }
+}
+
+@media(max-width: 750px) {
+    html{
+        font-size: 12px;
+    }
+
+    main{
+        float:none;
+        width:95%;
+    }
+
+    aside{
+        float:none;
+        width:95%
+    }
+}

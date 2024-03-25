@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="This webpage is about the Biography of Shaheed Bhagat-Singh">
+        <meta name="keywords" content="Shaheed Bhagat-Singh, freedom fighter">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/normalize.css">
+
+        <title>Biography of Shaheed Bhagat-Singh</title>
+    </head>
+
+    <body>
+        <header>
+            <h1>Shaheed Bhagat-Singh</h1>
+        </header>
+
+        <nav>
+            <ul class="menu">
+                <li id="home-link"> <a href="index.html">Home</a></li>
+                <li id="contact-link"> <a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <main id="main-section">
+            <form name="contact" id="contact" method="post" action="contact.php">
+            
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required autofocus placeholder="Your Full Name">
+                </div>    
+
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="Your Email Address">
+                </div>
+                
+                <div>
+                    <label for="birthdate">Birth Date:</label>
+                    <input type="date" id="birthdate" name="birthdate">
+                </div>    
+                
+                <div>
+                    <label for="phone">Phone No.</label>
+                    <input type="tel" id="phoneNumber" name="phoneNumber">
+                </div>
+                
+                <div>    
+                    <label for="reason">Reason for Contacting:</label>
+                    <select id="reason" name="reason">
+                        <option selected>Select a Reason</option>
+                        <option value="inquiry">General Inquiry</option>
+                        <option value="feedback">Feedback</option>
+                    </select>
+                </div>  
+
+                <div>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Your Message"></textarea>
+                </div>
+
+                <div>
+                    <label for="robot">I am not a Robot</label>
+                    <input type="checkbox" id="not-robot" name="not-robot">
+                </div>
+
+                <div>
+                    <input type="submit" value="Submit">
+                </div>
+            
+            </form>
+        </main>
+
+        <aside id="side-section">
+            <section>
+                <h3>FAQs</h3>
+                <table>
+
+                    <tbody>
+                    <tr>
+                        <th>Date of birth</th>
+                        <td>27 september 1907</td>
+                    </tr>
+
+                    <tr>
+                        <th>Know as</th>
+                        <td>Hero of freedom</td>
+                    </tr>
+
+                    <tr>
+                        <th>Birth place</th>
+                        <td>Lahore in Pakistan</td>
+                    </tr>
+
+                    <tr>
+                        <th>Job</th>
+                        <td>Writer</td>
+                    </tr>
+
+                    <tr>
+                        <th>Died on</th>
+                        <td>March-23-1931</td>
+                    </tr>
+                    </tbody>
+
+                </table>
+            </section>
+
+            <section>
+                <h3>External Links</h3>
+                <ul>
+                    <li><a href="https://www.britannica.com/biography/Bhagat-Singh">Bio-freedom fighter</a></li>
+                    <li><a href="https://simple.wikipedia.org/wiki/Bhagat_Singh">Indian anti-colonial revolutionary</a></li>
+                    <li><a href="https://economictimes.indiatimes.com/news/new-updates/remembering-bhagat-singh-here-are-some-least-known-things-about-the-indian-revolutionary/articleshow/104008560.cms?from=mdr">love for poetry and drawing</a></li>
+                </ul>
+            </section>
+
+        </aside>
+
+        <footer id="clear-element">
+            <p>&copy; 2024 Pahul Singh</p>
+        </footer>
+    </body>
+
+    </html>
